@@ -1,0 +1,11 @@
+.container-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #158bc2;
+    color: #fff;
+    gap: 5px;
+    font-family:monospace;
+}
