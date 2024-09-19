@@ -1,0 +1,11 @@
+.container-cofrinho-feliz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem-cofre-feliz{
+    width: 150px;
+    height: 200px;
+}

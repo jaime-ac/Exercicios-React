@@ -1,0 +1,112 @@
+.porquinho-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-titulo-porquinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #158bc2;
+    width: 100%;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.container-descricao-porquinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+    .enunciado-exercicio-porquinho{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+
+.botao-quebrar-cofre{
+    height: 30px;
+    width: 200px;
+    border: solid 1px #000;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+    .botao-quebrar-cofre:hover{
+        transition: 0.5s;
+        background-color: #158bc2;
+        cursor: pointer;
+    }
+
+.campo-preco-produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+    .input-campos{
+        height: 30px;
+        width: 250px;
+        border: solid 1px #000;
+        border-radius: 10px;
+        padding-left: 3px;
+        margin: 5px;
+        margin-top: 10px;
+    }
+
+.container-calculo{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.campo-botoes-moedas{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    /* background-image: url("./images/fundo-moedas.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.botao-realizar-calculo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+    .botao-calculo{
+        height: 35px;
+        width: 250px;
+        border: solid 1px #000;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+        .botao-calculo:hover{
+            background-color: #158bc2;
+            color: #fff;
+            transition: 0.5s;
+        }
+
+.campo-resultado{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
