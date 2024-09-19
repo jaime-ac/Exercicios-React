@@ -1,8 +1,8 @@
-import { useState } from "react"
-import TituloExercicios from "../components/TituloExercicios"
 import "./Porquinho.css"
-import CofrinhoTriste from "../components/CofrinhoTriste"
+import { useState } from "react"
 import CofrinhoFeliz from "../components/CofrinhoFeliz"
+import CofrinhoTriste from "../components/CofrinhoTriste"
+import TituloExercicios from "../components/TituloExercicios"
 
 function Porquinho() {
     const [produto, setProduto] = useState('')
@@ -34,15 +34,13 @@ function Porquinho() {
 
         <div className="container-titulo-porquinho">
 
-            <TituloExercicios texto={"Meu Cofre"} emoji={"💰🔐"}/>
+            <TituloExercicios texto={"Meu Cofrinho"} emoji={"💰🔐"}/>
 
         </div>
 
         <div className="container-descricao-porquinho">
 
-            <p className="enunciado-exercicio-porquinho">Faça um programa que leia o valor de um produto e conte a quantidade de moedas no cofre. O programa deverá verificar se o total de reais que contem no cofrinho é o bastante para comprar o produto. </p>
-
-            <button className="botao-quebrar-cofre">Quebrar cofre...🔓</button>
+            <p className="enunciado-exercicio-porquinho">Faça um programa que leia o valor de um produto e conte a quantidade de moedas no cofre para verificar se o dinheiro guardado é suficiente ou não para comprar o produto. </p>
 
         </div>
 
@@ -53,6 +51,8 @@ function Porquinho() {
                 value={produto}
                 onChange={(event) => setProduto(event.target.value)}
             />
+
+            <button className="botao-quebrar-cofre">Quebrar cofre...🔓</button>
 
         </div>
 
