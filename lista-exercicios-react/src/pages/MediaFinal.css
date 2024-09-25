@@ -1,0 +1,102 @@
+.container-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.container-titulo-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #158bc2;
+    width: 100%;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.container-descricao-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+.enunciado-exer-media{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.container-calculo-media{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.parte-dados-calculo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding-left: 20px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.parte-resultado-calculo{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.entrada-dados-calculo{
+    height: 40px;
+    width: 250px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: #158bc2;
+}
+    .entrada-dados-calculo:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .entrada-dados-calculo::placeholder{
+        font-size: 15px;
+        color: rgb(26, 25, 25);
+    }
+    .label-botoes{
+        font-size: 15px;
+        font-family: monospace;
+        font-weight: bold;
+        margin-top: 15px;
+        padding-right: 190px;
+    }
+
+.botao-calculo-media{
+    height: 30px;
+    width: 150px;
+    border: solid 2px #158bc2;
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+    .botao-calculo-media:hover{
+        background-color: #158bc2;
+        color: #fff;
+        
+    }
