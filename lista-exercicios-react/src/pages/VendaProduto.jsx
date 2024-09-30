@@ -56,11 +56,7 @@ function VendaProduto() {
 
                 <button className="botao-calculo-venda" onClick={valorVendaProduto}>Calcular venda...</button>
 
-                <img className="imagem-calculo" src="./images/imagem-calculo.png" alt="" />
-
             </div>
-
-
 
             <div className="container-resultado-venda">
 

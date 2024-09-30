@@ -1,0 +1,165 @@
+.container-farmarcia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-6);
+}
+    .logo-farmarcia{
+        height: 70px;
+        width: 70px;
+        margin-left: 15px;
+    }
+
+    .placa-farmarcia{
+        height: 60px;
+        width: 70px;
+        margin-right: 15px;
+    }
+
+.container-visual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .imagem-farmarcia{
+        height: 300px;
+        width: 500px;
+    }
+    .botao-produtos{
+        height: 30px;
+        width: 150px;
+        border: solid 2px var(--cor-1);
+        color: var(--cor-3);
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: monospace;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+    .botao-produtos:hover{
+        height: 35px;
+        width: 155px;
+        background-color: var(--cor-1);
+        border-color: var(--cor-5);
+        color: var(--cor-2);
+        font-weight: bolder;
+        transition: 2ms;
+    }
+.container-atendimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+    .botao-atendimento{
+        height: 40px;
+        width: 200px;
+        border: solid 2px var(--cor-1);
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: monospace;
+        color: var(--cor-3);
+        cursor: pointer;
+    }
+        .botao-atendimento:hover{
+            height: 45px;
+            width: 205px;
+            background-color: var(--cor-1);
+            color: var(--cor-2);
+            border-color: var(--cor-5);
+            transition: 2ms;
+        }
+
+.botoes-atendimento{
+    height: 35px;
+    width: 200px;
+    border: solid 2px var(--cor-5);
+    background-color: var(--cor-1);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    color: var(--cor-2);
+    cursor: pointer;
+}
+    .botoes-atendimento:hover{
+        background-color: var(--cor-2);
+        color: var(--cor-1);
+        font-weight: bolder;
+        border-color: var(--cor-1);
+    }
+
+.container-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 40px;
+}
+    .container-normal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 30%;
+    }
+    .container-preferencial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 30%;
+    }
+    .container-atender{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+
+.senhas-normais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: solid 2px var(--cor-1);
+    background-color: darkgreen;
+    color: var(--cor-2);
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bolder;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.senhas-preferenciais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border: solid 2px var(--cor-1);
+    background-color: rgb(184, 35, 35);
+    color: var(--cor-2);
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bolder;
+    gap: 10px;
+    border-radius: 15px;
+}

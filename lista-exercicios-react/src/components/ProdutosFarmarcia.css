@@ -1,0 +1,14 @@
+.container-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background-color: var(--cor-2);
+}
+
+.imagem-produtos{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+}
