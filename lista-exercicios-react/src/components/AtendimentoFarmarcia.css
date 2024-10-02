@@ -16,7 +16,7 @@
     .botoes-atendimento{
         height: 35px;
         width: 200px;
-        border: solid 2px var(--cor-5);
+        border: solid 1px var(--cor-5);
         background-color: var(--cor-1);
         border-radius: 10px;
         font-size: 16px;
@@ -24,6 +24,7 @@
         font-family: monospace;
         color: var(--cor-2);
         cursor: pointer;
+        box-shadow: 0 0 8px 4px var(--cor-1);
     }
         .botoes-atendimento:hover{
             background-color: var(--cor-2);
