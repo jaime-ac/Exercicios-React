@@ -1,59 +1,13 @@
 
+import "./Farmarcia.css"
 import { useState } from "react"
 import ProdutosFarmarcia from "../components/ProdutosFarmarcia"
-import "./Farmarcia.css"
+import AtendimentoFarmarcia from "../components/AtendimentoFarmarcia"
 
 function Farmarcia() {
     const [produtos, setProdutos] = useState(false)
-    const [filaNormal, setFilaNormal] = useState([])
-    const [filaPreferencial, setFilaPreferencial] = useState([])
-    const [contador, setContador] = useState(1)
-
-    function senhaNormal(){
-
-        let senha_normal = {
-
-            numero: contador,
-            tipo: 'Normal'
-
-        }
-
-        setContador(contador + 1)
-
-        setFilaNormal([...filaNormal, senha_normal])
-        
-    }
-
-    function senhaPreferencial(){
-
-        let senha_preferencial = {
-
-            numero: contador,
-            tipo: 'Preferencial'
-
-        }
-
-        setContador(contador + 1)
-
-        setFilaPreferencial([...filaPreferencial, senha_preferencial])
-
-    }
-
-    function chamarPaciente(){
-
-        if (filaPreferencial.length){
-
-            alert(filaPreferencial[0].numero)
-            setFilaPreferencial(filaPreferencial.slice(1))
-
-        }else if (filaNormal.length){
-
-            alert(filaNormal[0].numero)
-            setFilaNormal(filaNormal.slice(1))
-
-        }
-
-    }
+    const [atender, setAtender] = useState(false)
+    const [abriuCaixa, setAbriuCaixa] = useState(false)
 
   return (
     <div className="container-farmarcia">
@@ -61,6 +15,9 @@ function Farmarcia() {
         <div className="container-cabecalho">
 
             <img src="./farmarcia/farmarcia-logo.png" alt="" className="logo-farmarcia"/>
+            <button className="botao-sobre" onClick={() => setAbriuCaixa(true)}>Sobre Márcia</button>
+            
+            
             <img src="./farmarcia/farmarcia-placa.png" alt="" className="placa-farmarcia"/>
 
         </div>
@@ -68,61 +25,54 @@ function Farmarcia() {
         <div className="container-visual">
 
             <img src="./farmarcia/farmarcia.png" alt="" className="imagem-farmarcia"/>
+
+        </div>
+
+        <div className="div-botoes-produtos-atendimento">
+
             <button className="botao-produtos" onClick={ () => setProdutos(!produtos) }>Ver produtos</button>
+            <button className="botao-produtos" onClick={ () => setAtender(!atender) }>Atendimento</button>
+
+        </div>
+
+        <div className="div-produtos">
+
             {produtos && <ProdutosFarmarcia/>}
 
         </div>
 
-        <div className="container-atendimento">
+        <div className="div-atendimento">
 
-            <button className="botao-atendimento">Atendimento</button>
-
-            <div className="container-botoes">
-
-                <div className="container-normal">
-
-                    <button className="botoes-atendimento" onClick={senhaNormal}>Senha Normal</button>
-
-                    {filaNormal.map((senha_normal) => (
-
-                        <div key={senha_normal.numero} className="senhas-normais">
-
-                            <p>{senha_normal.tipo}</p>
-                            <p>{senha_normal.numero}</p>
-
-                        </div>
-
-                    ))}
-
-                </div>
-
-                <div className="container-preferencial">
-
-                    <button className="botoes-atendimento" onClick={senhaPreferencial}>Senha Preferencial</button>
-
-                    {filaPreferencial.map((senha_preferencial) => (
-
-                        <div key={senha_preferencial.numero} className="senhas-preferenciais">
-
-                            <p>{senha_preferencial.tipo}</p>
-                            <p>{senha_preferencial.numero}</p>
-
-                        </div>
-
-                    ))}
-
-                </div>
-
-                <div className="container-atender">
-
-                    <button className="botoes-atendimento" onClick={chamarPaciente}>Chamar Senha</button>
-
-                </div>
-
-            </div>
+            {atender && <AtendimentoFarmarcia/>}
 
         </div>
       
+            <dialog open={abriuCaixa}>
+
+                <div className="sobre-marcia">
+
+                    <h1>Márcia</h1>
+
+                    <img className="imagem-marcia" src="./farmarcia/marcia.png" alt="" />
+
+                    <p className="texto-marcia">Márcia possui formação em administração de empresas, com uma paixão especial por empreendedorismo e design.</p>
+
+                    <p className="texto-marcia">Márcia sempre foi uma pessoa determinada e criativa. Ela cresceu em uma família onde o empreendedorismo era valorizado, inspirada pelo sucesso de seu tio Mário, que administrava uma farmácia local.</p>
+
+                    <p className="texto-marcia">Depois de se formar na faculdade, Márcia se casou e começou a trabalhar em uma empresa de marketing, onde pôde desenvolver suas habilidades em design e gestão. No entanto, sua vida pessoal deu uma reviravolta quando seu casamento chegou ao fim após um evento no mínimo estranho. Seu marido saiu para comprar cigarros e nunca mais voltou, deixando Márcia sozinha para lidar com a dor do abandono e o desafio de reconstruir sua vida.</p>
+
+                    <p className="texto-marcia">Decidida a seguir em frente, Márcia viu na farmácia de seu tio Mário uma oportunidade de recomeçar. Ela comprou o negócio e começou a reformá-lo, aplicando suas habilidades em administração e design para transformá-lo em um espaço moderno e acolhedor.</p>
+
+                    <p className="texto-marcia">Enquanto renovava a farmácia, Márcia também decidiu investir em tecnologia para impulsionar o negócio. Ela implementou um sistema de gerenciamento de estoque automatizado e lançou um programa de fidelidade digital para os clientes, proporcionando uma experiência de compra mais conveniente e personalizada.</p>
+
+                    <p className="texto-marcia">Agora, com a farmácia renovada e pronta para competir no mercado, Márcia está determinada a fazer da Farmárcia um sucesso. Ela está em busca de um programador de tecnologia para ajudá-la a desenvolver uma presença online robusta, incluindo um website responsivo e aplicativos móveis que ofereçam aos clientes uma experiência de compra moderna e simplificada. A história de Márcia é um testemunho de resiliência e determinação, mostrando como ela transformou uma adversidade em uma oportunidade de crescimento pessoal e profissional. Ahhh, e ela é muito mais feliz agora :D</p>
+
+                    <button className="botao-fechar-caixa" onClick={() => setAbriuCaixa(false)}>Fechar</button>
+
+                </div>
+                    
+            </dialog>
+
     </div>
   )
 }

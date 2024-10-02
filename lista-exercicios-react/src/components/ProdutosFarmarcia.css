@@ -5,6 +5,8 @@
     width: 100%;
     gap: 10px;
     background-color: var(--cor-2);
+    /* flex-wrap: wrap; */
+    /* o flex-wrap permite mostrar muitos elementos (produtos em linhas quebradas sem mudar o formato do container da página */
 }
 
 .imagem-produtos{
