@@ -11,12 +11,12 @@ function VendaProduto() {
         if(Number(valorProduto) < 20){
 
             let lucroProduto = Number(valorProduto) * 0.45
-            setValorVenda(Number(valorProduto) + lucroProduto)
+            setValorVenda((Number(valorProduto) + lucroProduto).toFixed(2))
             
         }else{
             
             let lucroProduto = Number(valorProduto) * 0.30
-            setValorVenda(Number(valorProduto) + lucroProduto)
+            setValorVenda((Number(valorProduto) + lucroProduto).toFixed(2))
 
         }
 
