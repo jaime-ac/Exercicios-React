@@ -6,6 +6,7 @@ import Porquinho from './pages/Porquinho'
 import MediaFinal from './pages/MediaFinal'
 import VendaProduto from './pages/VendaProduto'
 import Farmarcia from './pages/Farmarcia'
+import AlturaValentinaEnzo from './pages/AlturaValentinaEnzo'
 
 function App() {
   const [pagina, setPagina] = useState()
@@ -24,7 +25,7 @@ function App() {
             <button className='botoes-navegacao' onClick={() => setPagina(<MediaFinal/>)}>3</button>
             <button className='botoes-navegacao' onClick={() => setPagina(<VendaProduto/>)}>4</button>
             <button className='botoes-navegacao' onClick={() => setPagina(<Farmarcia/>)}>5</button>
-            <button className='botoes-navegacao'>6</button>
+            <button className='botoes-navegacao' onClick={() => setPagina(<AlturaValentinaEnzo/>)}>6</button>
             <button className='botoes-navegacao'>7</button>
             <button className='botoes-navegacao'>8</button>
             <button className='botoes-navegacao'>9</button>
