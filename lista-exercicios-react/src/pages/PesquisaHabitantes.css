@@ -1,0 +1,42 @@
+.container-pesquisa-habitantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.container-titulo-habitantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #158bc2;
+    width: 100%;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.container-pesquisa{
+    display: flex;
+    width: 100%;
+    /* background-image: url("./images/habitantes.png");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+}
+
+.container-descricao-habitantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding: 10px;
+}
+    .enunciado-pesquisa{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }

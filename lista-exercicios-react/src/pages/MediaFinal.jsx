@@ -29,19 +29,19 @@ function MediaFinal() {
     
             }else if (mediaAluno >= 0 && mediaAluno <= 4){
     
-                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"E"}/>)
+                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"./images/conceito-e.png"}/>)
                 
             }else if (mediaAluno > 4 && mediaAluno <= 6){
                 
-                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"D"}/>)
+                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"./images/conceito-d.png"}/>)
                 
             }else if (mediaAluno > 6 && mediaAluno <= 7.5){
                 
-                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"C"}/>)
+                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"./images/conceito-c.png"}/>)
                 
             }else if (mediaAluno > 7.5 && mediaAluno <= 9){
                 
-                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"B"}/>)
+                setConceito(<ConceitoMedia name={nome} media={mediaAluno} situacao={"./images/conceito-b.png"}/>)
                 
             }else{
                 

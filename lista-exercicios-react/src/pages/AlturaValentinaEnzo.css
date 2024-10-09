@@ -28,7 +28,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
             padding-left: 10px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
     .container-exercicio-altura {
@@ -36,7 +36,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 43px;
+        margin-top: 50px;
         gap: 25px;
     }
         .parte-valentina {
@@ -46,7 +46,7 @@
             align-items: center;
             flex-direction: column;
             padding-left: 20px;
-            gap: 10px;
+            gap: 20px;
         }
         .parte-calculo {
             width: 30%;
@@ -82,7 +82,7 @@
             align-items: center;
             flex-direction: column;
             padding-left: 20px;
-            gap: 10px;
+            gap: 20px;
         }
         .texto-personagens {
             font-size: 18px;

@@ -73,7 +73,7 @@
 .container-calculo{
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -83,7 +83,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
 }
 
 .botao-realizar-calculo{
