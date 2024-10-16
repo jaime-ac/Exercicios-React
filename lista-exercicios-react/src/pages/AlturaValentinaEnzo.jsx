@@ -1,6 +1,6 @@
 import { useState } from "react"
-import TituloExercicios from "../components/TituloExercicios"
 import "./AlturaValentinaEnzo.css"
+import TituloExercicios from "../components/TituloExercicios"
 
 function AlturaValentinaEnzo() {
 
