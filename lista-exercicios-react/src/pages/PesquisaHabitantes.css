@@ -17,13 +17,11 @@
 }
 
 .container-pesquisa{
-    display: flex;
     width: 100%;
-    /* background-image: url("./images/habitantes.png");
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container-descricao-habitantes{
@@ -40,3 +38,78 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
+
+.container-inputs-dados{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.div-entrada-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+    .inputs-habitantes{
+        height: 35px;
+        width: 200px;
+        border: solid 1px #000;
+        border-radius: 15px;
+        padding-left: 3px;
+    }
+    .botao-adicao-habitante{
+        height: 25px;
+        width: 150px;
+        border: solid 1px #158bc2;
+        border-radius: 15px;
+        color: #158bc2;
+        background-color: #fff;
+        font-size: 12px;
+        font-family: monospace;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 27px;
+    }
+        .botao-adicao-habitante:hover{
+            background-color: #158bc2;
+            color: #fff;
+
+        }
+
+.div-botao-pesquisa{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao-pesquisa-habitantes{
+    height: 30px;
+    width: 150px;
+    border: solid 1px #158bc2;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #158bc2;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+    .botao-pesquisa-habitantes:hover{
+        color: #fff;
+        background-color: #158bc2;
+        font-size: 15px;
+    }
+
+.container-resultado-habitantes{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
