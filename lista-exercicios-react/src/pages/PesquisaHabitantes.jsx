@@ -30,25 +30,21 @@ function PesquisaHabitantes() {
   
     }
 
-    if ( altura < 0 || altura > 3 || genero < 0 || genero > 1){
-
-      alert("Digite dados válidos!!!")
-
-    }else if(altura === '' || genero === ''){
+    if(altura === '' || genero === ''){
 
       alert("Preencha todos os campos!!!")
+
+    }else if ( altura < 0 || altura > 3 || genero < 0 || genero > 1){
+
+      alert("Digite dados válidos!!!")
 
     }else{
 
       if (listaHabitantes.length < 3){
-
-        // alert("Dados válidos!")
   
         habitante.altura = Number(altura)
-        // alert("passei")
   
         habitante.genero = Number(genero)
-        // alert("passei de novo")
   
         setListaHabitantes([...listaHabitantes, habitante])
         alert("Habitante adicionado...")

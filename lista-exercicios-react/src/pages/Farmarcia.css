@@ -27,9 +27,9 @@
     dialog{
         border: none;
         border-radius: 20px;
-        width: 50%;
+        width: 40%;
         position: fixed;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -41,8 +41,8 @@
         flex-direction: column;
         padding-left: 8px;
         padding-right: 8px;
-        gap: 7px;
-        border: solid 1px #000;
+        gap: 5px;
+        border: solid 1px;
         border-radius: 20px;
         background-color: var(--cor-2);
         box-shadow: inset 0 0 8px 4px var(--cor-1);
@@ -65,18 +65,18 @@
             }
 
             .imagem-marcia{
-                height: 130px;
-                width: 120px;
+                height: 120px;
+                width: 110px;
             }
 
             .botao-fechar-caixa{
-                height: 25px;
-                width: 70px;
+                height: 20px;
+                width: 60px;
                 border: solid 1px var(--cor-1);
                 border-radius: 10px;
                 background-color: darkred;
                 color: var(--cor-2);
-                font-size: 15px;
+                font-size: 12px;
                 font-family: cursive;
                 font-weight: bolder;
                 margin-bottom: 5px;
@@ -84,7 +84,7 @@
             }
 
             .texto-marcia{
-                font-size: 12px;
+                font-size: 10px;
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
                 font-weight: bold;
             }

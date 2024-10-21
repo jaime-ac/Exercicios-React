@@ -51,7 +51,7 @@ function Farmarcia() {
 
                 <div className="sobre-marcia">
 
-                    <h1>Márcia</h1>
+                    <h3>Márcia Da Silva</h3>
 
                     <img className="imagem-marcia" src="./farmarcia/marcia.png" alt="" />
 

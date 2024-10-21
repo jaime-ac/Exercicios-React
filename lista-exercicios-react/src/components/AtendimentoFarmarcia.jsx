@@ -8,6 +8,7 @@ function AtendimentoFarmarcia() {
     const [atendimento, setAtendimento] = useState()
     const [classeAtendimento, setClasseAtendimento] = useState("atendimento-vazio")
     const [contador, setContador] = useState(1)
+    const [contadorPreferencial, setContadorPreferencial] = useState(1)
 
     
     function senhaNormal(){
@@ -29,12 +30,12 @@ function AtendimentoFarmarcia() {
 
         let senha_preferencial = {
 
-            numero: contador,
+            numero: contadorPreferencial,
             tipo: 'Preferencial'
 
         }
 
-        setContador(contador + 1)
+        setContadorPreferencial(contadorPreferencial + 1)
 
         setFilaPreferencial([...filaPreferencial, senha_preferencial])
 

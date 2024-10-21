@@ -4,7 +4,7 @@ function TituloExercicios(props) {
   return (
     <div className="container-exercicio">
 
-        <h3>{props.texto} {props.emoji}</h3>
+        <h3 className="titulo-exercicio">{props.texto} {props.emoji}</h3>
       
     </div>
   )
